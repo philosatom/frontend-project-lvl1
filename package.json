@@ -1,0 +1,19 @@
+{
+  "name": "brain-games",
+  "version": "0.1.0",
+  "description": "a set of 5 console games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philosatom/frontend-project-lvl1.git"
+  },
+  "author": "Alexey Chernyaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philosatom/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/philosatom/frontend-project-lvl1#readme"
+}

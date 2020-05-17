@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "a set of 5 console games",
   "main": "index.js",
   "type": "module",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/philosatom/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/philosatom/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/philosatom/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "a set of 5 console games",
   "main": "index.js",
   "type": "module",
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "repository": {
     "type": "git",

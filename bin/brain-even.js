@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import { getAnswer, greet, playBrainEven } from '../src/cli.js';
+import getAnswer from '../src/getAnswer.js';
+import greet from '../src/greet.js';
+import playBrainEven from '../src/playBrainEven.js';
 
 console.log('Welcome to the Brain Games!');
 

@@ -20,5 +20,5 @@ export default (playerName) => {
     console.log('Correct!');
   }
 
-  console.log(`Congratulations, ${playerName}`);
+  console.log(`Congratulations, ${playerName}!`);
 };

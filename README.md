@@ -2,7 +2,7 @@ This repository is created for educational purposes.
 
 # frontend-project-lvl1
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability) 
+[![Maintainability](https://api.codeclimate.com/v1/badges/37b48dd73462c321d12c/maintainability)](https://codeclimate.com/github/philosatom/frontend-project-lvl1/maintainability) 
 [![Node CI](https://github.com/philosatom/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/philosatom/frontend-project-lvl1/actions)
 
 ## Setup

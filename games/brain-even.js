@@ -5,6 +5,7 @@ const getRandomNumber = (min, max) => Math.floor(Math.random() * (max + 1 - min)
 const getQA = () => {
   const num = getRandomNumber(0, 100);
   const correctAnswer = (isEven(num)) ? 'yes' : 'no';
+
   return [num, correctAnswer];
 };
 

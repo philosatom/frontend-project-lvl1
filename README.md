@@ -13,7 +13,7 @@ $ make install
 ## Version history
   
 ### 0.3.0 (latest)
-\+ **brain-even** cli game with simple rules:
+Created **brain-even** cli game with simple rules:
 * The game shows you a random number
 * Answer "yes" if the number is even, otherwise answer "no"
 * Give three correct answers in a row to win the game
@@ -24,9 +24,9 @@ It will welcome you, ask your name and greet you. Then you can play the game.
 [![asciicast](https://asciinema.org/a/EWpPInQ8HRXWdby7kafU9L2E4.svg)](https://asciinema.org/a/EWpPInQ8HRXWdby7kafU9L2E4)
 
 ### 0.2.0
-\+ Greeting in **brain-games**
+Added greeting to **brain-games**
 
 ### 0.1.0
-\+ **brain-games** that welcomes you to the Brain Games
+Created **brain-games** that welcomes you to the Brain Games
 
 Install the package and type **brain-games**.

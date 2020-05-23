@@ -11,17 +11,31 @@ $ make install
 ```
 
 ## Version history
-  
-### 0.3.0 (latest)
+
+### 0.4.0 (latest)
+Created a game engine, so anyone can use it to build own three-steps question-answer brain game.  
+
+Rewrote **brain-even** game so that now it is based on the new engine.  
+
+Created **brain-calc** cli game with next rules:
+* The game shows you an expression
+* Write the result of the expression
+* Give three correct answers in a row to win the game
+
+Install the package and type **brain-calc**.  
+
+[![asciicast](https://asciinema.org/a/333180.svg)](https://asciinema.org/a/333180)
+
+### 0.3.0
 Created **brain-even** cli game with simple rules:
 * The game shows you a random number
 * Answer "yes" if the number is even, otherwise answer "no"
 * Give three correct answers in a row to win the game
 
-Install the package and type **brain-even**.\
+Install the package and type **brain-even**.  
 It will welcome you, ask your name and greet you. Then you can play the game.
 
-[![asciicast](https://asciinema.org/a/EWpPInQ8HRXWdby7kafU9L2E4.svg)](https://asciinema.org/a/EWpPInQ8HRXWdby7kafU9L2E4)
+[![asciicast](https://asciinema.org/a/333122.svg)](https://asciinema.org/a/333122)
 
 ### 0.2.0
 Added greeting to **brain-games**

@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "a set of 5 console games",
   "main": "index.js",
   "type": "module",

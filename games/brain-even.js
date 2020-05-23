@@ -1,6 +1,4 @@
-const isEven = (num) => num % 2 === 0;
-
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max + 1 - min)) + min;
+import { isEven, getRandomNumber } from '../src/math.js';
 
 const getQA = () => {
   const num = getRandomNumber(0, 100);

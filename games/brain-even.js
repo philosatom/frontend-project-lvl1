@@ -1,7 +1,7 @@
-import { isEven, getRandomNumber } from '../src/math.js';
+import { isEven, getRandomNumbers } from '../src/math.js';
 
 const getQA = () => {
-  const num = getRandomNumber(0, 100);
+  const num = getRandomNumbers(0, 100, 1);
   const correctAnswer = (isEven(num)) ? 'yes' : 'no';
 
   return [num, correctAnswer];

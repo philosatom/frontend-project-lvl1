@@ -35,3 +35,14 @@ export const getGcd = (num1, num2) => {
 
   return max;
 };
+
+export const getProgression = (start, size, step) => {
+  const progression = [];
+
+  for (let i = 0; i < size; i += 1) {
+    const currentNum = start + step * i;
+    progression.push(currentNum);
+  }
+
+  return progression;
+};

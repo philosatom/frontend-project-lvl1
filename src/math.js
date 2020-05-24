@@ -9,7 +9,7 @@ export const getRandomNumbers = (min, max, numsCount) => {
   }
 
   return nums;
-}
+};
 
 export const calc = (operand1, operand2, operator) => {
   let result = null;

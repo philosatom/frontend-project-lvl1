@@ -12,12 +12,22 @@ $ make install
 
 ## Version history
 
-### 0.4.0 (latest)
+### 0.5.0 (latest)
+Created **brain-gcd** cli game with the following rules:
+* The game shows you two random numbers
+* Find the greatest common divisor of given numbers
+* Give three correct answers in a row to win the game
+
+Install the package and type **brain-gcd**.
+
+[![asciicast](https://asciinema.org/a/333365.svg)](https://asciinema.org/a/333365)
+
+### 0.4.0
 Created a game engine, so anyone can use it to build own three-steps question-answer brain game.  
 
 Rewrote **brain-even** game so that now it is based on the new engine.  
 
-Created **brain-calc** cli game with next rules:
+Created **brain-calc** cli game with the following rules:
 * The game shows you an expression
 * Write the result of the expression
 * Give three correct answers in a row to win the game

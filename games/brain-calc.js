@@ -2,7 +2,7 @@ import { getRandomNumbers, calc } from '../src/math.js';
 
 const getQA = () => {
   const operators = ['+', '-', '*'];
-  const randomIndex = getRandomNumbers(0, 2, 1);
+  const [randomIndex] = getRandomNumbers(0, 2, 1);
   const operator = operators[randomIndex];
 
   const [num1, num2] = getRandomNumbers(0, 100, 2);

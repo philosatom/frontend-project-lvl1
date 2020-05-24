@@ -1,7 +1,7 @@
 import { getRandomNumbers, isPrime } from '../src/math.js';
 
 const getQA = () => {
-  const [num] = getRandomNumbers(0, 100, 1);
+  const [num] = getRandomNumbers(0, 300, 1);
   const correctAnswer = (isPrime(num)) ? 'yes' : 'no';
 
   return [num, correctAnswer];

@@ -12,7 +12,17 @@ $ make install
 
 ## Version history
 
-### 0.5.0 (latest)
+### 0.6.0 (latest)
+Created **brain-progression** cli game with the following rules:
+* The game shows you a progression of 10 elements with one number missed
+* Find out what number is missing in the progression
+* Give three correct answers in a row to win the game
+
+Install the package and type **brain-progression**.
+
+[![asciicast](https://asciinema.org/a/333406.svg)](https://asciinema.org/a/333406)
+
+### 0.5.0
 Created **brain-gcd** cli game with the following rules:
 * The game shows you two random numbers
 * Find the greatest common divisor of given numbers

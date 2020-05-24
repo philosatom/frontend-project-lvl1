@@ -12,7 +12,17 @@ $ make install
 
 ## Version history
 
-### 0.6.0 (latest)
+### 0.7.0 (latest)
+Created **brain-prime** cli game with the following rules:
+* The game shows you a random number
+* Answer "yes" if given number is prime, otherwise answer "no"
+* Give three correct answers in a row to win the game
+
+Install the package and type **brain-prime**.
+
+[![asciicast](https://asciinema.org/a/333455.svg)](https://asciinema.org/a/333455)
+
+### 0.6.0
 Created **brain-progression** cli game with the following rules:
 * The game shows you a progression of 10 elements with one number missed
 * Find out what number is missing in the progression

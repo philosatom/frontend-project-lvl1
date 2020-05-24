@@ -24,3 +24,14 @@ export const calc = (operand1, operand2, operator) => {
 
   return result;
 };
+
+export const getGcd = (num1, num2) => {
+  let min = Math.min(num1, num2);
+  let max = Math.max(num1, num2);
+
+  while (min > 0) {
+    [min, max] = [max % min, min];
+  }
+
+  return max;
+};

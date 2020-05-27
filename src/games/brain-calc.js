@@ -1,4 +1,18 @@
-import { getRandomNumbers, calc } from '../math.js';
+import { getRandomNumbers } from '../math.js';
+
+const calc = (operand1, operand2, operator) => {
+  let result = null;
+
+  if (operator === '+') {
+    result = operand1 + operand2;
+  } else if (operator === '-') {
+    result = operand1 - operand2;
+  } else if (operator === '*') {
+    result = operand1 * operand2;
+  }
+
+  return result;
+};
 
 const getQuestionAndAnswer = () => {
   const operators = ['+', '-', '*'];

@@ -1,4 +1,6 @@
-import { isEven, getRandomNumbers } from '../math.js';
+import { getRandomNumbers } from '../math.js';
+
+const isEven = (num) => num % 2 === 0;
 
 const getQuestionAndAnswer = () => {
   const [num] = getRandomNumbers(0, 100, 1);

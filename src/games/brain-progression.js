@@ -1,4 +1,15 @@
-import { getRandomNumbers, getProgression } from '../math.js';
+import { getRandomNumbers } from '../math.js';
+
+const getProgression = (start, size, step) => {
+  const progression = [];
+
+  for (let i = 0; i < size; i += 1) {
+    const currentNum = start + step * i;
+    progression.push(currentNum);
+  }
+
+  return progression;
+};
 
 const getQuestionAndAnswer = () => {
   const [start, step] = getRandomNumbers(0, 100, 2);

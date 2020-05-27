@@ -1,6 +1,6 @@
-import { getRandomNumbers, getGcd } from '../src/math.js';
+import { getRandomNumbers, getGcd } from '../math.js';
 
-const getQA = () => {
+const getQuestionAndAnswer = () => {
   const [num1, num2] = getRandomNumbers(0, 100, 2);
   const result = getGcd(num1, num2);
 
@@ -10,4 +10,4 @@ const getQA = () => {
   return [numsStr, correctAnswer];
 };
 
-export default () => ['Find the greatest common divisor of given numbers.', getQA];
+export default () => ['Find the greatest common divisor of given numbers.', getQuestionAndAnswer];

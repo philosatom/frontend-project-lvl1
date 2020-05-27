@@ -1,6 +1,6 @@
-import { getRandomNumbers, calc } from '../src/math.js';
+import { getRandomNumbers, calc } from '../math.js';
 
-const getQA = () => {
+const getQuestionAndAnswer = () => {
   const operators = ['+', '-', '*'];
   const [randomIndex] = getRandomNumbers(0, 2, 1);
   const operator = operators[randomIndex];
@@ -13,4 +13,4 @@ const getQA = () => {
   return [expression, correctAnswer];
 };
 
-export default () => ['What is the result of the expression?', getQA];
+export default () => ['What is the result of the expression?', getQuestionAndAnswer];

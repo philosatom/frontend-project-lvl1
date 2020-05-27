@@ -1,10 +1,10 @@
-import { getRandomNumbers, isPrime } from '../src/math.js';
+import { getRandomNumbers, isPrime } from '../math.js';
 
-const getQA = () => {
+const getQuestionAndAnswer = () => {
   const [num] = getRandomNumbers(0, 300, 1);
   const correctAnswer = (isPrime(num)) ? 'yes' : 'no';
 
   return [num, correctAnswer];
 };
 
-export default () => ['Answer "yes" if given number is prime. Otherwise answer "no".', getQA];
+export default () => ['Answer "yes" if given number is prime. Otherwise answer "no".', getQuestionAndAnswer];

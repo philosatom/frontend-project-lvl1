@@ -1,6 +1,6 @@
-import { getRandomNumbers, getProgression } from '../src/math.js';
+import { getRandomNumbers, getProgression } from '../math.js';
 
-const getQA = () => {
+const getQuestionAndAnswer = () => {
   const [start, step] = getRandomNumbers(0, 100, 2);
   const [randomIndex] = getRandomNumbers(0, 9, 1);
   const progression = getProgression(start, 10, step);
@@ -14,4 +14,4 @@ const getQA = () => {
   return [modifiedProgression, correctAnswer];
 };
 
-export default () => ['What number is missing in the progression?', getQA];
+export default () => ['What number is missing in the progression?', getQuestionAndAnswer];

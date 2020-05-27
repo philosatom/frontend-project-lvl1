@@ -20,9 +20,6 @@ const getQuestionAndAnswer = () => {
   const randomIndex = getRandomNumber(0, 2);
   const operator = operators[randomIndex];
   const [num1, num2] = times(2, getRandomNumber, 0, 100);
-
-  console.log('Проверка', num1, num2);
-
   const result = calc(num1, num2, operator);
 
   const expression = `${num1} ${operator} ${num2}`;

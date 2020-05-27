@@ -18,11 +18,11 @@ export default (game) => {
 
     if (playerAnswer !== correctAnswer) {
       console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}"`);
-      console.log(`Let's try again, ${playerName}`);
+      console.log(`Let's try again, ${playerName}!`);
       return;
     }
     console.log('Correct!');
   }
 
-  console.log(`Congratulations, ${playerName}`);
+  console.log(`Congratulations, ${playerName}!`);
 };

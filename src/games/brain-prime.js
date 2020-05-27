@@ -1,12 +1,12 @@
-import { getRandomNumbers } from '../math.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const isPrime = (num) => {
   const sqrt = Math.sqrt(num);
 
-  if (num % sqrt === 0 || isEven(num)) return false;
+  if (num % sqrt === 0 || num % 2 === 0) return false;
 
   for (let d = 3; d < sqrt; d += 2) {
-    if (sqrt % d === 0) {
+    if (num % d === 0) {
       return false;
     }
   }
@@ -14,7 +14,7 @@ const isPrime = (num) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const [num] = getRandomNumbers(0, 300, 1);
+  const num = getRandomNumber(0, 300);
   const correctAnswer = (isPrime(num)) ? 'yes' : 'no';
 
   return [num, correctAnswer];

@@ -1,20 +1,21 @@
-import { getRandomNumbers } from '../math.js';
+import getRandomNumber from '../getRandomNumber.js';
+import times from '../times.js';
 
 const getProgression = (start, size, step) => {
   const progression = [];
 
   for (let i = 0; i < size; i += 1) {
     const currentNum = start + step * i;
-    progression.push(currentNum);
+    progression[i] = currentNum;
   }
 
   return progression;
 };
 
 const getQuestionAndAnswer = () => {
-  const [start, step] = getRandomNumbers(0, 100, 2);
-  const [randomIndex] = getRandomNumbers(0, 9, 1);
+  const [start, step] = times(2, getRandomNumber, 0, 100);
   const progression = getProgression(start, 10, step);
+  const randomIndex = getRandomNumber(0, 9);
   const hiddenNum = progression[randomIndex];
 
   progression[randomIndex] = '..';

@@ -1,4 +1,5 @@
-import { getRandomNumbers } from '../math.js';
+import getRandomNumber from '../getRandomNumber.js';
+import times from '../times.js';
 
 const getGcd = (num1, num2) => {
   let min = Math.min(num1, num2);
@@ -12,7 +13,7 @@ const getGcd = (num1, num2) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const [num1, num2] = getRandomNumbers(0, 100, 2);
+  const [num1, num2] = times(2, getRandomNumber, 0, 100);
   const result = getGcd(num1, num2);
 
   const numsStr = `${num1} ${num2}`;

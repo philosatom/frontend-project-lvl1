@@ -1,4 +1,5 @@
-import { getRandomNumbers } from '../math.js';
+import getRandomNumber from '../getRandomNumber.js';
+import times from '../times.js';
 
 const calc = (operand1, operand2, operator) => {
   let result = null;
@@ -16,9 +17,12 @@ const calc = (operand1, operand2, operator) => {
 
 const getQuestionAndAnswer = () => {
   const operators = ['+', '-', '*'];
-  const [randomIndex] = getRandomNumbers(0, 2, 1);
+  const randomIndex = getRandomNumber(0, 2);
   const operator = operators[randomIndex];
-  const [num1, num2] = getRandomNumbers(0, 100, 2);
+  const [num1, num2] = times(2, getRandomNumber, 0, 100);
+
+  console.log('Проверка', num1, num2);
+
   const result = calc(num1, num2, operator);
 
   const expression = `${num1} ${operator} ${num2}`;

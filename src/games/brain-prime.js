@@ -1,4 +1,4 @@
-import getRandomNumber from '../getRandomNumber.js';
+import { getRandomNumber } from '../utils.js';
 
 const isPrime = (num) => {
   const sqrt = Math.sqrt(num);

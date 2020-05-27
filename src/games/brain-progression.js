@@ -1,5 +1,4 @@
-import getRandomNumber from '../getRandomNumber.js';
-import times from '../times.js';
+import { getRandomNumber, times } from '../utils.js';
 
 const getProgression = (start, size, step) => {
   const progression = [];

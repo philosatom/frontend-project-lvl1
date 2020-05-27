@@ -1,5 +1,4 @@
-import getRandomNumber from '../getRandomNumber.js';
-import times from '../times.js';
+import { getRandomNumber, times } from '../utils.js';
 
 const getGcd = (num1, num2) => {
   let min = Math.min(num1, num2);

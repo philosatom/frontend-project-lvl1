@@ -1,5 +1,4 @@
-import getRandomNumber from '../getRandomNumber.js';
-import times from '../times.js';
+import { getRandomNumber, times } from '../utils.js';
 
 const calc = (operand1, operand2, operator) => {
   let result = null;

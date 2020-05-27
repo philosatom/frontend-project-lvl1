@@ -1,8 +1,12 @@
 {
   "name": "frontend-project-lvl1",
-  "version": "0.7.0",
-  "description": "a set of 5 console games",
-  "keywords": ["brain", "game", "even", "calc", "gcd", "progression", "prime"],
+  "version": "1.0.0",
+  "description": "a set of console brain games",
+  "keywords": [
+    "brain",
+    "games",
+    "console"
+  ],
   "main": "index.js",
   "type": "module",
   "scripts": {

@@ -12,7 +12,10 @@ $ make install
 
 ## Version history
 
-### 1.0.0 (latest)
+### 1.0.1 (latest)
+Refactoring. Made some small changes.
+
+### 1.0.0
 Removed **brain-games** bin.  
 Now you don't get welcome and greeting messages, when you type **brain-games** in your console.  
 
@@ -21,10 +24,10 @@ Rewrited the game engine so that now you should give the game function as an inp
 Removed **getAnswer**, **greet** and **math** modules.  
 
 Created a common **utils** module with the following functions available for developers:
-* **getRandomNumber**:
-  * generates one random number from **min** to **max**
-* **times**:
-  * invokes the **iteratee** with given arguments (**args**) **n** times
+* **getRandomNumber(_min_, _max_)**:
+  * generates one random number from _**min**_ to _**max**_
+* **times(_n_, _iteratee_[, _iterateeArgs_])**:
+  * invokes the _**iteratee**_ with given arguments (_**iterateeArgs**_) _**n**_ times
   * returns an array of the results of each invocation  
 
   It works quite like [_.times](https://lodash.com/docs/4.17.15#times) from [lodash](https://lodash.com/), but invokes the iteratee with multiple arguments.

@@ -26,8 +26,7 @@ const description = 'What is the result of the expression?';
 
 const getQuestionAndAnswer = () => {
   const operator = getRandomOperator();
-  const operandsCount = 2;
-  const [operand1, operand2] = times(operandsCount, getRandomNumber, 0, 100);
+  const [operand1, operand2] = times(2, getRandomNumber, 0, 100);
   const result = calculate(operand1, operand2, operator);
 
   const question = `${operand1} ${operator} ${operand2}`;

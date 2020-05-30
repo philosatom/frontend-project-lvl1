@@ -1,17 +1,16 @@
 import { getRandomNumber, times } from '../utils.js';
 
-const calc = (operand1, operand2, operator) => {
-  let result = null;
-
-  if (operator === '+') {
-    result = operand1 + operand2;
-  } else if (operator === '-') {
-    result = operand1 - operand2;
-  } else if (operator === '*') {
-    result = operand1 * operand2;
+const calculate = (operand1, operand2, operator) => {
+  switch (operator) {
+    case '+':
+      return operand1 + operand2;
+    case '-':
+      return operand1 - operand2;
+    case '*':
+      return operand1 * operand2;
+    default:
+      return null;
   }
-
-  return result;
 };
 
 const getQuestionAndAnswer = () => {
@@ -19,7 +18,7 @@ const getQuestionAndAnswer = () => {
   const randomIndex = getRandomNumber(0, 2);
   const operator = operators[randomIndex];
   const [num1, num2] = times(2, getRandomNumber, 0, 100);
-  const result = calc(num1, num2, operator);
+  const result = calculate(num1, num2, operator);
 
   const expression = `${num1} ${operator} ${num2}`;
   const correctAnswer = result.toString();

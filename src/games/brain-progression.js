@@ -1,23 +1,28 @@
 import { getRandomNumber, times } from '../utils.js';
 
-const getProgression = (start, size, step) => {
+const getArithmeticProgression = (start, size, step) => {
   const progression = [];
 
-  for (let i = 0; i < size; i += 1) {
-    const currentNum = start + step * i;
-    progression[i] = currentNum;
+  for (let termIndex = 0; termIndex < size; termIndex += 1) {
+    const currentNumber = start + step * termIndex;
+    progression[termIndex] = currentNumber;
   }
 
   return progression;
 };
 
-const getQuestionAndAnswer = () => {
-  const [start, step] = times(2, getRandomNumber, 0, 100);
-  const progression = getProgression(start, 10, step);
-  const randomIndex = getRandomNumber(0, 9);
-  const hiddenNum = progression[randomIndex];
+const description = 'What number is missing in the progression?';
 
-  progression[randomIndex] = '..';
+const getQuestionAndAnswer = () => {
+  const [firstTerm, step] = times(2, getRandomNumber, 0, 100);
+  const progressionSize = 10;
+  const progression = getArithmeticProgression(firstTerm, progressionSize, step);
+
+  const lastTermIndex = progressionSize - 1;
+  const termIndex = getRandomNumber(0, lastTermIndex);
+  const hiddenNum = progression[termIndex];
+
+  progression[termIndex] = '..';
 
   const modifiedProgression = progression.join(' ');
   const correctAnswer = hiddenNum.toString();
@@ -25,4 +30,4 @@ const getQuestionAndAnswer = () => {
   return [modifiedProgression, correctAnswer];
 };
 
-export default () => ['What number is missing in the progression?', getQuestionAndAnswer];
+export default () => [description, getQuestionAndAnswer];

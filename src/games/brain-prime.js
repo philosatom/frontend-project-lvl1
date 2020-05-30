@@ -1,23 +1,27 @@
 import { getRandomNumber } from '../utils.js';
 
-const isPrime = (num) => {
-  const sqrt = Math.sqrt(num);
+const isPrime = (number) => {
+  const maxDivider = Math.sqrt(number);
 
-  if (num % sqrt === 0 || num % 2 === 0) return false;
+  if (number % 2 === 0) return false;
 
-  for (let d = 3; d < sqrt; d += 2) {
-    if (num % d === 0) {
+  for (let divider = 3; divider <= maxDivider; divider += 2) {
+    if (number % divider === 0) {
       return false;
     }
   }
   return true;
 };
 
-const getQuestionAndAnswer = () => {
-  const num = getRandomNumber(0, 300);
-  const correctAnswer = (isPrime(num)) ? 'yes' : 'no';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-  return [num, correctAnswer];
+const getQuestionAndAnswer = () => {
+  const number = getRandomNumber(0, 300);
+
+  const question = number.toString();
+  const correctAnswer = (isPrime(number)) ? 'yes' : 'no';
+
+  return [question, correctAnswer];
 };
 
-export default () => ['Answer "yes" if given number is prime. Otherwise answer "no".', getQuestionAndAnswer];
+export default () => [description, getQuestionAndAnswer];

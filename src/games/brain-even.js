@@ -1,12 +1,16 @@
 import { getRandomNumber } from '../utils.js';
 
-const isEven = (num) => num % 2 === 0;
+const isEven = (number) => number % 2 === 0;
+
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const getQuestionAndAnswer = () => {
-  const num = getRandomNumber(0, 100);
-  const correctAnswer = (isEven(num)) ? 'yes' : 'no';
+  const number = getRandomNumber(0, 100);
 
-  return [num, correctAnswer];
+  const question = number.toString();
+  const correctAnswer = (isEven(number)) ? 'yes' : 'no';
+
+  return [question, correctAnswer];
 };
 
-export default () => ['Answer "yes" if the number is even, otherwise answer "no".', getQuestionAndAnswer];
+export default () => [description, getQuestionAndAnswer];

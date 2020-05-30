@@ -1,24 +1,27 @@
 import { getRandomNumber, times } from '../utils.js';
 
-const getGcd = (num1, num2) => {
-  let min = Math.min(num1, num2);
-  let max = Math.max(num1, num2);
+const getGcd = (number1, number2) => {
+  let minNumber = Math.min(number1, number2);
+  let maxNumber = Math.max(number1, number2);
 
-  while (min > 0) {
-    [min, max] = [max % min, min];
+  while (minNumber > 0) {
+    const mod = maxNumber % minNumber;
+    [minNumber, maxNumber] = [mod, minNumber];
   }
 
-  return max;
+  return maxNumber;
 };
+
+const description = 'Find the greatest common divisor of given numbers.';
 
 const getQuestionAndAnswer = () => {
-  const [num1, num2] = times(2, getRandomNumber, 0, 100);
-  const result = getGcd(num1, num2);
+  const [number1, number2] = times(2, getRandomNumber, 0, 100);
+  const result = getGcd(number1, number2);
 
-  const numsStr = `${num1} ${num2}`;
+  const question = `${number1} ${number2}`;
   const correctAnswer = result.toString();
 
-  return [numsStr, correctAnswer];
+  return [question, correctAnswer];
 };
 
-export default () => ['Find the greatest common divisor of given numbers.', getQuestionAndAnswer];
+export default () => [description, getQuestionAndAnswer];

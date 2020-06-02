@@ -12,7 +12,10 @@ $ make install
 
 ## Version history
 
-### 1.0.1 (latest)
+### 1.0.2 (latest)
+Refactoring. Made some bug fixes and small changes.
+
+### 1.0.1
 Refactoring. Made some small changes.
 
 ### 1.0.0

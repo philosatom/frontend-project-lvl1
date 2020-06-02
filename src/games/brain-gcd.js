@@ -16,10 +16,10 @@ const description = 'Find the greatest common divisor of given numbers.';
 
 const getQuestionAndAnswer = () => {
   const [number1, number2] = times(2, getRandomNumber, 0, 100);
-  const result = getGcd(number1, number2);
+  const gcd = getGcd(number1, number2);
 
   const question = `${number1} ${number2}`;
-  const correctAnswer = result.toString();
+  const correctAnswer = gcd.toString();
 
   return [question, correctAnswer];
 };
